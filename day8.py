@@ -9,14 +9,15 @@ n= int(input("input a number :"))
 print(fact(n))           
 
 #To check the number  whether it is prime or not !
-def prim(n):
-    if(n==1):
-        return False
-    elif (n==2):
-        return True;
-    else:
-        for x in range(2,n):
-            if (n % x==0):
-                return False
-            return True
-    print(prim(3))                   
+num=15
+flag=0
+for i in range(2,num):
+    if num%i ==0:
+        flag =1
+        break
+if flag ==1:
+    print("not a prime number")
+elsee:
+    print("prime number")
+        
+        
